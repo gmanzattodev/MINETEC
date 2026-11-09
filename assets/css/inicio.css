@@ -1,0 +1,277 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: url(../img/obss.jpg);
+    background-position: center center;
+    background-size: contain;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 4px solid var(--color-gray-700);
+}
+
+header h1 {
+    color: var(--color-gray-100);
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: var(--font-pixel);
+    animation: saltar 2s infinite;
+}
+
+header nav {
+    display: flex;
+    gap: 3rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--color-gray-100);
+    font-size: 0.8rem;
+    font-family: var(--font-pixel);
+    position: relative;
+    transition: 0.3s ease-in-out;
+    padding: 1rem;
+}
+
+header svg {
+    display: none;
+}
+
+.nav-links.active {
+    color: #caa8f5;
+    background-color: #341f50;
+    border-radius: 10px;
+}
+
+main {
+    flex: 1;
+}
+
+.inicio .info-inicio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    background-color: #1a0f2e;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(138, 43, 226, 0.25), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(186, 85, 211, 0.25), transparent 40%),
+        linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+        linear-gradient(to bottom, #2a174a 0%, #120a24 100%);
+    background-size: auto, auto, 40px 40px, 40px 40px, 100% 100%;
+    background-position: center, center, 0 0, 20px 20px, 0 0;
+}
+
+.inicio .info-inicio h2 {
+    color: var(--color-purple-700);
+    font-size: 4rem;
+    font-family: var(--font-pixel);
+    animation: saltar 4s ease-in-out infinite;
+}
+
+@keyframes saltar {
+    0% {
+        text-shadow: 0px 0px 4px #5a4285;
+    }
+
+    50% {
+        text-shadow: 0px 0px 20px #5a4285;
+    }
+
+    100% {
+        text-shadow: 0px 0px 4px #5a4285;
+    }
+}
+.inicio .info-inicio p {
+    margin-top: 10px;
+    color: var(--color-gray-100);
+    font-size: 1rem;
+    font-family: var(--font-pixel);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.inicio .info-inicio .btn {
+    margin-top: 20px;
+    display: flex;
+    gap: 4rem;
+
+}
+
+.inicio .info-inicio .btn button {
+    background-color: var(--color-gray-700);
+    border: 3px solid var(--color-gray-100);
+    color: var(--color-gray-100);
+    font-size: 0.8rem;
+    font-family: var(--font-pixel);
+    padding: 1rem 1.6rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.inicio .info-inicio .btn button:hover {
+    border: 3px solid var(--color-purple-700);
+}
+
+.pq-tec {
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid var(--color-purple-700);
+}
+
+.pq-tec .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.pq-tec .cards .card {
+    background-color: #2D2D2D;
+    border: 3px solid var(--color-gray-700);
+    color: var(--color-gray-100);
+    font-size: 0.8rem;
+    margin-bottom: 4rem;
+    height: 200px;
+    width: 240px;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.pq-tec .cards .card:hover {
+    border: 3px solid var(--color-purple-700);
+    transform: translateY(-4px);
+}
+
+.pq-tec .cards .card svg {
+    background-color: var(--color-purple-500);
+    border: 3px solid var(--color-purple-700);
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.pq-tec .cards .card h3 {
+    margin-bottom: 0.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.pq-tec .cards .card p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    color: #99A1AF;
+    
+}
+
+.pt-jogar {
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(138, 43, 226, 0.25), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(186, 85, 211, 0.25), transparent 40%),
+        linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+        linear-gradient(to bottom, #2a174a 0%, #120a24 100%);
+    background-size: auto, auto, 40px 40px, 40px 40px, 100% 100%;
+    background-position: center, center, 0 0, 20px 20px, 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid var(--color-purple-700);
+    border-bottom: 4px solid var(--color-purple-700);
+    padding: 20px;
+}
+
+.pt-jogar h2 {
+    font-size: 2rem;
+    color: var(--color-gray-100);
+    margin-top: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pt-jogar p {
+    font-size: 1rem;
+    color: var(--color-gray-100);
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pt-jogar button {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    background-color: var(--color-purple-700);
+    border: 3px solid var(--color-purple-500);
+    color: var(--color-gray-100);
+    font-size: 0.8rem;
+    font-family: var(--font-pixel);
+    padding: 1.6rem 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.pt-jogar button:hover {
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 600px) {
+    .inicio .info-inicio {
+        padding: 20px;
+    }
+
+    .inicio .info-inicio h2 {
+        font-size: 1.5rem;
+    }
+
+    .inicio .info-inicio p {
+        letter-spacing: 2px;
+        line-height: 21px;
+        font-size: 0.8rem;
+    }
+
+    .inicio .info-inicio .btn {
+        gap: 2rem;
+    }
+
+    .inicio .info-inicio .btn button {
+        font-size: 0.6rem;
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+header.active {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        display: none;
+        /* esconde menu */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #222;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-bar {
+        display: block;
+    }
+
+}

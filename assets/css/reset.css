@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-purple-700: #6A0DAD;
+    --color-purple-500: #8E44AD;
+    --color-purple-400: #9B59B6;
+    --color-purple-300: #C39BD3;
+    --color-green-700: #4A6E31;
+    --color-green-500: #5E8C3E;
+    --color-green-300: #A9DFBF;
+    --color-black: #1F1F1F;
+    --color-gray-700: #4F4F4F;
+    --color-gray-400: #D5D8DC;
+    --color-gray-100: rgb(244, 246, 247);
+    --font-pixel: 'Press Start 2P', cursive;
+}
+
+.page {
+    display: none;
+}
+
+.active-page {
+    display: block;
+}
+
+.floating-icon {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.2;
+    animation: float 6s ease-in-out infinite;
+}
+
+.icon-left {
+    left: 10%;
+    top: 30%;
+}
+
+.icon-right {
+    right: 10%;
+    top: 40%;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
